@@ -17,7 +17,7 @@ class App extends Component {
         const animalList = new AnimalList(props);
         const animalListSection = animalList.renderDOM();
 
-        const listSection = dom.querySelector('.list-section');
+        const listSection = dom.querySelector('.gallery');
         listSection.appendChild(animalListSection);
 
         const filterHorns = new FilterAnimals({
@@ -54,7 +54,7 @@ class App extends Component {
                         <section class="options-section">
                             <!-- FilterCats goes here -->
                         </section>
-                        <section class="list-section">
+                        <section class="gallery">
                             <!-- CatList goes here -->
                         </section>
                     </main>

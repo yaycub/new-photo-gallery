@@ -4,9 +4,7 @@ import AnimalItem from './AnimalItem.js';
 class AnimalList extends Component {
     renderHTML() {
         return `
-            <section class="gallery">
-                <ul class="horned-guys"></ul>
-            </section>
+            <ul class="horned-guys"></ul>
         `;
     }
 
