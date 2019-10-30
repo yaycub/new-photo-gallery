@@ -6,7 +6,8 @@ import Header from './Header.js';
 
 class App extends Component {
     onRender(dom){
-        const headerSection = Header.renderDom();
+        const header = new Header;
+        const headerSection = header.renderHTML();
         dom.prepend(headerSection);
 
         const props = {
@@ -16,7 +17,7 @@ class App extends Component {
         const animalList = new AnimalList(props);
         const animalListSection = animalList.renderDOM();
 
-        const listSection = dom.querySelector('.horned-guys');
+        const listSection = dom.querySelector('.list-section');
         listSection.appendChild(animalListSection);
 
         const filterHorns = new FilterAnimals({
@@ -39,6 +40,27 @@ class App extends Component {
 
         const filterAnimalsDom = filterHorns.renderDOM();
 
+        const optionsSection = dom.querySelector('.options-section');
+        optionsSection.appendChild(filterAnimalsDom);
 
     }
+
+    renderHTML() {
+        return `
+            <div>
+                    <!-- Header goes here -->
+            
+                    <main>
+                        <section class="options-section">
+                            <!-- FilterCats goes here -->
+                        </section>
+                        <section class="list-section">
+                            <!-- CatList goes here -->
+                        </section>
+                    </main>
+                </div>
+        `;
+    }
 }
+
+export default App;
