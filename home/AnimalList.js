@@ -11,7 +11,7 @@ class AnimalList extends Component {
     }
 
     onRender(dom) {
-        const animal = this.props.animal;
+        const animal = this.props.images;
 
         animal.forEach(item => {
             const props = { item: item };

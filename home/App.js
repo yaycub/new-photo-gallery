@@ -7,7 +7,7 @@ import Header from './Header.js';
 class App extends Component {
     onRender(dom){
         const header = new Header;
-        const headerSection = header.renderHTML();
+        const headerSection = header.renderDOM();
         dom.prepend(headerSection);
 
         const props = {
@@ -33,7 +33,7 @@ class App extends Component {
                     });
                 }
 
-                const updateProps = {images: filteredAnimals };
+                const updateProps = { images: filteredAnimals };
                 animalList.update(updateProps);
             }
         });

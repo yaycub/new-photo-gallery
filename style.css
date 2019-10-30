@@ -1,0 +1,130 @@
+html{
+    min-height:100;
+    margin: 0 auto;
+}
+
+#devil{
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+h1{
+    font-family: 'Shrikhand';
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background-color: lightcoral;
+}
+
+footer {
+    position: fixed;
+    height: 50px;
+    background-color: lightcoral;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+    font-family: 'Shrikhand';
+    color: lightgrey;
+}
+
+main{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 50px;
+    margin: 0;
+}
+
+.filter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid lightgrey;
+}
+
+select{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.horned-guys{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.image-con{
+    height: 200px;
+    width: 200px;
+    object-fit: scale-down;
+}
+
+h2{
+    font-size: 18px;
+}
+
+.image-desc{
+    position: relative;
+    display: inline-block;
+}
+
+.image-desc .desc-text{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+.title-container:hover .image-desc .desc-text{
+    visibility: visible;
+  }
