@@ -30,22 +30,6 @@ header{
     background-color: lightcoral;
 }
 
-footer {
-    position: fixed;
-    height: 50px;
-    background-color: lightcoral;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 2px solid black;
-    font-family: 'Shrikhand';
-    color: lightgrey;
-}
-
 main{
     font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: 50px;
@@ -78,9 +62,6 @@ select{
 ul{
     list-style: none;
     padding: 0;
-}
-
-.horned-guys{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
