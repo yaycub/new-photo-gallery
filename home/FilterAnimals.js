@@ -4,14 +4,13 @@ class FilterAnimals extends Component {
     onRender(select) {
         const onFilter = this.props.onFilter;
 
-        select.addEventListener('input', () => {
+        select.addEventListener('change', () => {
             onFilter(select.value);
         });
     }
 
     renderHTML() {
         return `
-            <section class="filter">
                 <select type="select" class="keyword-select">
                     <option value="" selected>All Types</option>
                     <option value="narwhal">Narwhals</option>
@@ -26,7 +25,6 @@ class FilterAnimals extends Component {
                     <option value="lizard">Lizard</option>
                     <option value="dragon">Dragon</option>
                 </select>
-            </section>
         `;
     }
 }
